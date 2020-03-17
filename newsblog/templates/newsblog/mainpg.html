@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<html>
+<head>
+	<link rel="stylesheet" href="{% static 'stylle.css' %}">
+
+<title>HomePage</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+ <header>
+ <div style="background-color: black">	
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+  <a class="nav-link active" style="color:rgb(255,255,20);" href="/business" target="blank">BUSINESS</a>
+  </li>
+    <li class="nav-item">
+   <a class="nav-link" style="color:rgb(255,255,20);" href="/technical" target="blank">TECHNICAL</a>
+  </li>
+  <li class="nav-item">
+     <a class="nav-link" style="color:rgb(255,255,20);" href="/international" target="blank">INTERNATIONAL</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="color:rgb(255,255,20);" href="/entertainment" target="blank">ENTERTAINMENT</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" style="color:rgb(255,255,20);" href="/sports" target="blank">SPORTS</a>
+  </li>
+
+    <form class="form-inline my-2 my-lg-0" method="GET" action="/search">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" name="u" >
+      <button class="btn btn-outline-success my-2 my-sm-0" style="color:rgb(255,255,20);" type="submit">Search</button>
+    </form> 
+
+    <li class="nav-item">
+   <a class="nav-link" style="color:rgb(255,255,20); float: left;" href="/logout" target="blank">LOGOUT</a>
+  </li>
+</ul>
+</header>
+{% block content %}
+
+
+
+
+<body style="background-color: black; color: white;font-size:20px;margin-top: 50px;">
+<div style="color:rgb(120,120,120);text-align:left; margin-left: auto;margin-right: auto ; width: 30em; font-family: verdana;">
+<h3 style=" font-weight: bold; padding-top: 120px; text-shadow: 2px 2px 4px #000000; ">Search worldwide news within an APP</h3>
+<div style=" padding-top: 30px;  text-shadow: 2px 2px 4px #000000; "> 
+    <h4>Get latest breaking news headlines, and search for articles from various news sources and blogs with our News APP</h4> 
+</div>
+</div>
+
+
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+ </body>
+ </html>
+{% endblock %}

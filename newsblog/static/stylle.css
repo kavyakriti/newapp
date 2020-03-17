@@ -1,0 +1,35 @@
+*
+{  
+    margin:0;
+    padding:0;
+
+}
+
+header
+{
+background-image:url(/home/kavya/Desktop/kavyahtml/img2.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+body{
+	background: rgb(0,0,0);
+	
+}
+
+.boxfixing{
+margin-left:470px;
+margin-top:50px;
+border-style: solid rgba(0,0,0,1) 5px;
+background-color: rgba(0,0,0,0.5);
+margin-right:490px;
+padding-left: 50px;
+}
+
+
+.login{
+color:red;
+font-family: VERDANA;
+text-align-last: 
+}
+
